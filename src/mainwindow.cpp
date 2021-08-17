@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include <QMessageBox>
+#include <QFont>
 #include <QMenuBar>
 #include <QStatusBar>
 #include <QHBoxLayout>
@@ -23,12 +24,18 @@ MainWindow::MainWindow(QWidget *parent)
     QHBoxLayout *predictedDigit = new QHBoxLayout();
     QLabel *labelDigit = new QLabel("Result:");
     resultDigit = new QLabel("");
+    labelDigit->setFont(QFont("Arial", 20, 3));
+    resultDigit->setFont(QFont("Arial", 20, 3));
+    resultDigit->setStyleSheet("QLabel { color : red; }");
     predictedDigit->addWidget(labelDigit);
     predictedDigit->addWidget(resultDigit);
 
     QHBoxLayout *predictedProb = new QHBoxLayout();
     QLabel *labelProb = new QLabel("Probability:");
     resultProb = new QLabel("");
+    labelProb->setFont(QFont("Arial", 20, 3));
+    resultProb->setFont(QFont("Arial", 20, 3));
+    resultProb->setStyleSheet("QLabel { color : red; }");
     predictedProb->addWidget(labelProb);
     predictedProb->addWidget(resultProb);
 
@@ -43,11 +50,11 @@ MainWindow::MainWindow(QWidget *parent)
     predictButton = new QPushButton("&Predict");
     clearButton = new QPushButton("&Clear");
     predictButton->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
-    predictButton->setMinimumSize(100, 40);
-    predictButton->setMaximumSize(100, 40);
+    predictButton->setMinimumSize(200, 60);
+    predictButton->setMaximumSize(200, 60);
     clearButton->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
-    clearButton->setMinimumSize(100, 40);
-    clearButton->setMaximumSize(100, 40);
+    clearButton->setMinimumSize(200, 60);
+    clearButton->setMaximumSize(200, 60);
     infoLayout->addWidget(result);
     infoLayout->addWidget(predictButton);
     infoLayout->addWidget(clearButton);
@@ -91,7 +98,7 @@ void MainWindow::predict()
 {
     classifier->predict(scribbleArea->getImage());
     resultDigit->setText(QString::number(classifier->digit));
-    resultProb->setText(QString::number(classifier->prob));
+    resultProb->setText(QString::number(round(classifier->prob*100)/100));
 }
 
 void MainWindow::clear()

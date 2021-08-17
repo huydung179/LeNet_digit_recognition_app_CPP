@@ -26,8 +26,8 @@ void DigitPrediction::predict(QImage image)
     cv::Mat color_mat(image.height(),image.width(),CV_8UC4,const_cast<uchar*>(image.constBits()),static_cast<size_t>(image.bytesPerLine()));
     cv::Mat grey_mat;
     cv::cvtColor(color_mat, grey_mat, cv::COLOR_RGB2GRAY);
-    cv::resize(grey_mat, grey_mat, cv::Size(28, 28), cv::INTER_LINEAR);
-    cv::resize(grey_mat, grey_mat, cv::Size(32, 32), cv::INTER_LINEAR);
+    cv::resize(grey_mat, grey_mat, cv::Size(28, 28));
+    cv::resize(grey_mat, grey_mat, cv::Size(32, 32));
 //    cv::namedWindow("grayscale image", (550, 550));
 //    cv::imshow("grayscale image", grey_mat);
 //    cv::waitKey(0);
