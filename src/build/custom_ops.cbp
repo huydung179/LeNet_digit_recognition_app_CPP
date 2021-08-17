@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="custom_ops"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\cpplib\;CMake Files\..\..\..\..\..\cpplib\libtorch\;CMake Files\..\..\..\..\..\cpplib\libtorch\share\;CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\;CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Torch\;CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\;CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\public\;CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\;CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\;CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\;CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\;CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\;CMake Files\..\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\..\opt\opencv\;CMake Files\..\..\..\..\..\..\..\opt\opencv\build\;CMake Files\build\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/huydung/Deep/code/LeNet/app/src/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/huydung/Deep/code/LeNet/app/src/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/huydung/Deep/code/LeNet/app/src/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="inference">
+				<Option output="/home/huydung/Deep/code/LeNet/app/src/build/inference" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huydung/Deep/code/LeNet/app/src/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/home/huydung/Deep/code/LeNet/app/src/build/inference_autogen/include"/>
+					<Add directory="/opt/opencv/build"/>
+					<Add directory="/opt/opencv/opencv-master/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/core/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/flann/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/imgproc/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/ml/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/photo/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/dnn/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/features2d/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/imgcodecs/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/videoio/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/calib3d/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/highgui/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/objdetect/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/stitching/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/ts/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/video/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/gapi/include"/>
+					<Add directory="/home/huydung/cpplib/libtorch/include"/>
+					<Add directory="/home/huydung/cpplib/libtorch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 inference"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="inference/fast">
+				<Option output="/home/huydung/Deep/code/LeNet/app/src/build/inference" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huydung/Deep/code/LeNet/app/src/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/home/huydung/Deep/code/LeNet/app/src/build/inference_autogen/include"/>
+					<Add directory="/opt/opencv/build"/>
+					<Add directory="/opt/opencv/opencv-master/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/core/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/flann/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/imgproc/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/ml/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/photo/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/dnn/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/features2d/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/imgcodecs/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/videoio/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/calib3d/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/highgui/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/objdetect/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/stitching/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/ts/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/video/include"/>
+					<Add directory="/opt/opencv/opencv-master/modules/gapi/include"/>
+					<Add directory="/home/huydung/cpplib/libtorch/include"/>
+					<Add directory="/home/huydung/cpplib/libtorch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 inference/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="inference_autogen">
+				<Option working_dir="/home/huydung/Deep/code/LeNet/app/src/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 inference_autogen"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huydung/Deep/code/LeNet/app/src/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/build/inference_autogen/include/ui_mainwindow.h">
+			<Option target="inference"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/build/inference_autogen/mocs_compilation.cpp">
+			<Option target="inference"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/main.cpp">
+			<Option target="inference"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/mainwindow.cpp">
+			<Option target="inference"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/mainwindow.h">
+			<Option target="inference"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/mainwindow.ui">
+			<Option target="inference"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/scribblearea.cpp">
+			<Option target="inference"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/scribblearea.h">
+			<Option target="inference"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../cpplib/libtorch/share/cmake/Torch/TorchConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Torch\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../cpplib/libtorch/share/cmake/Torch/TorchConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Torch\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../cpplib/libtorch/share/cmake/Caffe2/Caffe2Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../cpplib/libtorch/share/cmake/Caffe2/Caffe2ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../cpplib/libtorch/share/cmake/Caffe2/Caffe2Targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../cpplib/libtorch/share/cmake/Caffe2/Caffe2Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../cpplib/libtorch/share/cmake/Caffe2/public/cuda.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../cpplib/libtorch/share/cmake/Caffe2/public/mkl.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../cpplib/libtorch/share/cmake/Caffe2/public/mkldnn.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../cpplib/libtorch/share/cmake/Caffe2/public/threads.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../cpplib/libtorch/share/cmake/Caffe2/public/utils.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../cpplib/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../cpplib/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDNN.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../cpplib/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/CMakeInitializeConfigs.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../cpplib/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../cpplib/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../cpplib/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindPackageMessage.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../cpplib/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\cpplib\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../opt/opencv/build/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\opencv\build\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../opt/opencv/build/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\opencv\build\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/../../../../../../../opt/opencv/build/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\opencv\build\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/build/detect_cuda_compute_capabilities.cpp">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/huydung/Deep/code/LeNet/app/src/build/detect_cuda_version.cc">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

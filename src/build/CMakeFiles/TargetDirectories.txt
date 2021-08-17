@@ -1,0 +1,4 @@
+/home/huydung/Deep/code/LeNet/app/src/build/CMakeFiles/rebuild_cache.dir
+/home/huydung/Deep/code/LeNet/app/src/build/CMakeFiles/edit_cache.dir
+/home/huydung/Deep/code/LeNet/app/src/build/CMakeFiles/inference.dir
+/home/huydung/Deep/code/LeNet/app/src/build/CMakeFiles/inference_autogen.dir
